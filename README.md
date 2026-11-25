@@ -1,6 +1,3 @@
-Here is a complete, copy-paste-ready `README.md` for your repository. It documents the architecture, tech stack, microservices, all 14 REST endpoints, Indian tax engine rules, and step-by-step GitHub Codespaces setup instructions.
-
-```markdown
 # FinSight AI — Personal Finance & Tax Brief Microservices
 
 **FinSight AI** is a Java 21 + Spring Boot microservices application that ingests multi-bank PDF statements (SBI, ICICI, HDFC, etc.), classifies expenses, investments, and savings using **Spring AI (Google Gemini)**, computes Indian Income Tax liabilities for salaried individuals, and generates a downloadable **Personal Financial & Tax Brief PDF** using **OpenPDF**.
