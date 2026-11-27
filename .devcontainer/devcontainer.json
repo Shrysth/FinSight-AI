@@ -1,0 +1,18 @@
+{
+  "name": "FinSight AI",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": "true"
+    }
+  },
+  "forwardPorts": [8761, 8080, 8081, 8082],
+  "portsAttributes": {
+    "8761": { "label": "Eureka" },
+    "8080": { "label": "API Gateway" },
+    "8081": { "label": "Auth Service" },
+    "8082": { "label": "Finance AI Service" }
+  },
+  "postCreateCommand": "./mvnw clean package -DskipTests"
+}
